@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Small girl</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background-image: url('background.jpg'); /* Replace 'background.jpg' with your actual image URL or file path */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #label {
+      font-size: 50px;
+      color: white;
+      margin-bottom: 600px;
+      margin-left: 150px; 
+    }
+
+    #centered-gif {
+      margin-top: 20px; /* Adjusted margin for separation from buttons */
+    }
+
+    #evil-button {
+      position: absolute;
+      white-space: nowrap;
+      font-size: 2rem;
+      border: none;
+      border-radius: 5px; /* Added rounded edges */
+      font-family: 'Roboto', sans-serif; /* Stylized font */
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      background-color: #ff4d4d; /* Red color for the 'NO' button */
+      color: white;
+    }
+
+    #yes-button {
+      position: absolute;
+      white-space: nowrap;
+      font-size: 2rem;
+      margin-top: 0px; /* Adjust margin as needed to separate the buttons */
+      margin-right: 300px;
+      background-color: #4caf50; /* Green color for the 'Yes' button */
+      color: white;
+      border: none;
+      border-radius: 5px; /* Added rounded edges */
+      font-family: 'Roboto', sans-serif; /* Stylized font */
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+    <div id="label">Your Label Here</div>
+    <img id="centered-gif" src="gif.gif" alt="Centered Gif">
+    <button id="evil-button">NO</button>
+    <button id="yes-button" onclick="moveToAnotherPage()">Yes</button>
+
+    <script>
+        function moveToAnotherPage() {
+          // Redirect to another page with the same code but without buttons
+          window.location.href = "next-page.html";
+        }
+      </script>
+
+</body>
+</html>
